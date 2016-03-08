@@ -13,6 +13,12 @@
 		0075A73D1C8EAA28004E44F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0075A73B1C8EAA28004E44F1 /* Main.storyboard */; };
 		0075A73F1C8EAA28004E44F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0075A73E1C8EAA28004E44F1 /* Assets.xcassets */; };
 		0075A7421C8EAA28004E44F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0075A7401C8EAA28004E44F1 /* LaunchScreen.storyboard */; };
+		0075A74C1C8EAB40004E44F1 /* CCPScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0075A74B1C8EAB40004E44F1 /* CCPScrollView.m */; };
+		0075A75A1C8EC07B004E44F1 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0075A7561C8EC07B004E44F1 /* 1.png */; };
+		0075A75B1C8EC07B004E44F1 /* 2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0075A7571C8EC07B004E44F1 /* 2.jpeg */; };
+		0075A75C1C8EC07B004E44F1 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0075A7581C8EC07B004E44F1 /* 3.jpg */; };
+		0075A75D1C8EC07B004E44F1 /* 4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0075A7591C8EC07B004E44F1 /* 4.jpeg */; };
+		0075A7601C8EC481004E44F1 /* NSTimer+CCPTimerAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 0075A75F1C8EC481004E44F1 /* NSTimer+CCPTimerAddition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,14 @@
 		0075A73E1C8EAA28004E44F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0075A7411C8EAA28004E44F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0075A7431C8EAA28004E44F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0075A74A1C8EAB40004E44F1 /* CCPScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPScrollView.h; sourceTree = "<group>"; };
+		0075A74B1C8EAB40004E44F1 /* CCPScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCPScrollView.m; sourceTree = "<group>"; };
+		0075A7561C8EC07B004E44F1 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		0075A7571C8EC07B004E44F1 /* 2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpeg; sourceTree = "<group>"; };
+		0075A7581C8EC07B004E44F1 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		0075A7591C8EC07B004E44F1 /* 4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpeg; sourceTree = "<group>"; };
+		0075A75E1C8EC481004E44F1 /* NSTimer+CCPTimerAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+CCPTimerAddition.h"; sourceTree = "<group>"; };
+		0075A75F1C8EC481004E44F1 /* NSTimer+CCPTimerAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+CCPTimerAddition.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +76,11 @@
 				0075A7361C8EAA28004E44F1 /* AppDelegate.m */,
 				0075A7381C8EAA28004E44F1 /* ViewController.h */,
 				0075A7391C8EAA28004E44F1 /* ViewController.m */,
+				0075A7491C8EAA62004E44F1 /* CCPMainScrollView */,
 				0075A73B1C8EAA28004E44F1 /* Main.storyboard */,
 				0075A73E1C8EAA28004E44F1 /* Assets.xcassets */,
 				0075A7401C8EAA28004E44F1 /* LaunchScreen.storyboard */,
+				0075A7551C8EC07B004E44F1 /* localImages */,
 				0075A7431C8EAA28004E44F1 /* Info.plist */,
 				0075A7321C8EAA28004E44F1 /* Supporting Files */,
 			);
@@ -77,6 +93,28 @@
 				0075A7331C8EAA28004E44F1 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0075A7491C8EAA62004E44F1 /* CCPMainScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				0075A74A1C8EAB40004E44F1 /* CCPScrollView.h */,
+				0075A74B1C8EAB40004E44F1 /* CCPScrollView.m */,
+				0075A75E1C8EC481004E44F1 /* NSTimer+CCPTimerAddition.h */,
+				0075A75F1C8EC481004E44F1 /* NSTimer+CCPTimerAddition.m */,
+			);
+			path = CCPMainScrollView;
+			sourceTree = "<group>";
+		};
+		0075A7551C8EC07B004E44F1 /* localImages */ = {
+			isa = PBXGroup;
+			children = (
+				0075A7561C8EC07B004E44F1 /* 1.png */,
+				0075A7571C8EC07B004E44F1 /* 2.jpeg */,
+				0075A7581C8EC07B004E44F1 /* 3.jpg */,
+				0075A7591C8EC07B004E44F1 /* 4.jpeg */,
+			);
+			path = localImages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,9 +174,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0075A75D1C8EC07B004E44F1 /* 4.jpeg in Resources */,
 				0075A7421C8EAA28004E44F1 /* LaunchScreen.storyboard in Resources */,
+				0075A75A1C8EC07B004E44F1 /* 1.png in Resources */,
 				0075A73F1C8EAA28004E44F1 /* Assets.xcassets in Resources */,
 				0075A73D1C8EAA28004E44F1 /* Main.storyboard in Resources */,
+				0075A75C1C8EC07B004E44F1 /* 3.jpg in Resources */,
+				0075A75B1C8EC07B004E44F1 /* 2.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,7 +192,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0075A73A1C8EAA28004E44F1 /* ViewController.m in Sources */,
+				0075A7601C8EC481004E44F1 /* NSTimer+CCPTimerAddition.m in Sources */,
 				0075A7371C8EAA28004E44F1 /* AppDelegate.m in Sources */,
+				0075A74C1C8EAB40004E44F1 /* CCPScrollView.m in Sources */,
 				0075A7341C8EAA28004E44F1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

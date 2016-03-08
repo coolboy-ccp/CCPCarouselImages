@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "CCPScrollView.h"
 @interface ViewController ()
 
 @end
@@ -16,12 +16,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    [self creataMainScrollView];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)creataMainScrollView {
+    NSArray *arr = @[@"1.png",@"2.jpeg",@"3.jpg",@"4.jpeg"];
+    CCPScrollView *mainScrollView = [[CCPScrollView alloc] initWithFrame:self.view.bounds];
+    [mainScrollView CreateScrollViewWithLocationImages:arr timerDuration:3.0f];
+    mainScrollView.tapImgBlock = ^(NSInteger index) {
+        NSLog(@"index----%ld",(unsigned long)index);
+    };
+    [self.view addSubview:mainScrollView];
 }
 
 @end
